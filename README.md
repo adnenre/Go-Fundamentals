@@ -6,7 +6,7 @@ Welcome to the **Go-fondamentals** repository. This project is a comprehensive, 
 
 ## 🌐 Discovering the Book
 
-- **Read online**: The book is published at [Go-fondamentals](https://Go-fondamentals.vercel.app/) .
+- **Read online**: The book is published at [Go-fondamentals](https://Go-start.vercel.app/) .
 - **Explore the content**: All chapters are written in Markdown and located in the `src/content/docs/` directory. You can browse them directly on GitHub.
 - **Changelog**: See [`CHANGELOG.md`](./CHANGELOG.md) for a versioned history of all chapters and updates.
 
