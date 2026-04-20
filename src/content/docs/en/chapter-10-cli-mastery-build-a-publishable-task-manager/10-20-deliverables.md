@@ -1,63 +1,63 @@
 ---
-title: Livrables
+title: Deliverables
 sidebar:
   order: 20
-  label: 10.20 Livrables
+  label: 10.20 Deliverables
 ---
 
-## Contexte
+## Context
 
-Après avoir terminé le projet Gestionnaire de tâches CLI, vous devriez disposer d'un ensemble de livrables qui rendent votre outil prêt pour la production et publiable.
+After completing the CLI Task Manager project, you should have a set of deliverables that make your tool production‑ready and publishable.
 
-## Livrables requis
+## Required deliverables
 
-- **Code source** – Tous les fichiers Go avec une structure de paquets appropriée, des commentaires et une gestion d'erreur.
-- **Tests unitaires** – Au moins 80 % de couverture pour la logique centrale (chargement, sauvegarde, ajout de tâches).
-- **Documentation** – `README.md` avec installation, utilisation, exemples et guide de contribution.
-- **Binaires de release** – Binaires pré‑compilés pour Linux, macOS, Windows (amd64, arm64) en utilisant GoReleaser.
-- **Module Go** – `go.mod` et `go.sum` avec dépendances épinglées.
-- **Makefile** – Cibles pour `build`, `test`, `clean`, `install`, `release`.
-- **CI/CD** – GitHub Actions (ou similaire) qui exécute les tests et construit lors du push/tag.
-- **Tag de version** – Tag Git (ex. `v1.0.0`) pour la release.
+- **Source code** – All Go files with proper package structure, comments, and error handling.
+- **Unit tests** – At least 80% coverage for core logic (loading, saving, adding tasks).
+- **Documentation** – `README.md` with installation, usage, examples, and contribution guide.
+- **Release binaries** – Pre‑compiled binaries for Linux, macOS, Windows (amd64, arm64) using GoReleaser.
+- **Go module** – `go.mod` and `go.sum` with pinned dependencies.
+- **Makefile** – Targets for `build`, `test`, `clean`, `install`, `release`.
+- **CI/CD** – GitHub Actions (or similar) that runs tests and builds on push/tag.
+- **Version tag** – Git tag (e.g., `v1.0.0`) for the release.
 
-## Livrables optionnels
+## Optional deliverables
 
-- **Empaquetage** – Formule Homebrew, Snap, ou dépôt APT.
-- **Complétions shell** – Générer les complétions bash/zsh/fish avec Cobra.
-- **Sortie couleur** – Respecter `NO_COLOR` et `CLICOLOR`.
-- **Barre de progression** – Pour les opérations longues (ex. traitement par lots).
+- **Packaging** – Homebrew formula, Snap, or APT repository.
+- **Shell completions** – Generate bash/zsh/fish completions with Cobra.
+- **Colour output** – Respect `NO_COLOR` and `CLICOLOR`.
+- **Progress bar** – For long operations (e.g., batch processing).
 
-## Exemple de structure README
+## Example README structure
 
-# TaskMan – Gestionnaire de tâches CLI
+# TaskMan – CLI Task Manager
 
 ## Installation
 
 ```bash
-go install github.com/votrenomutilisateur/taskman@latest
+go install github.com/yourusername/taskman@latest
 ```
 
-## Utilisation
+## Usage
 
 ```bash
-taskman ajouter "Acheter du lait"
-taskman lister
-taskman terminer 1
-taskman supprimer 1
+taskman add "Buy milk"
+taskman list
+taskman complete 1
+taskman delete 1
 ```
 
-## Développement
+## Development
 
 ```bash
 make test
 make build
 ```
 
-## Licence
+## License
 
 MIT
 
-## Liens utiles
+## Useful links
 
-- [Démarrage rapide GoReleaser](https://goreleaser.com/quick-start/)
-- [GitHub Actions pour Go](https://docs.github.com/fr/actions/automating-builds-and-tests/building-and-testing-go)
+- [GoReleaser Quick Start](https://goreleaser.com/quick-start/)
+- [GitHub Actions for Go](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go)
