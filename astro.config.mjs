@@ -5,14 +5,14 @@ import starlightThemeGalaxy from "starlight-theme-galaxy";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://adnenre.github.io/dotnet-book",
+  site: "https://go-start.vercel.app/",
   base: ".",
 
   integrations: [
     starlight({
       plugins: [starlightThemeGalaxy()],
       title: { en: "Go Fundamentals", fr: "les fondamentaux de Go" },
-      social: [{ icon: "github", label: "GitHub", href: "https://github.com/adnenre/dotnet-book/" }],
+      social: [{ icon: "github", label: "GitHub", href: "https://github.com/adnenre/Go-starter" }],
       defaultLocale: "en",
       locales: {
         // English docs in `src/content/docs/en/`
